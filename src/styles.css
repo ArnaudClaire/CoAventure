@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    background-color: rgb(207, 187, 187);
+}
+
+button{
+  background-color: #478bdf;
+  border-radius: 30px;
+  width: 100px;
+}

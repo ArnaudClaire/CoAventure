@@ -1,0 +1,63 @@
+<div class="flex justify-center items-center abuttongn-middle text-left w-fdivl h-screen  bg-[url('/assets/BG_2_surmesure.svg')] bg-cover">
+  <div class="pt- w-3/4 h-3/4 bg-opacity-30 backdrop-filter backdrop-blur-lg p-8 rounded-3xl shadow-lg">
+
+    
+
+    <div class="flex flex-row justify-around text-center">
+      <button (click)="saison='printemps'">printemps</button>
+      <button (click)="saison='été'">été</button>
+      <button (click)="saison='automne'">automne</button>
+      <button (click)="saison='hiver'">hiver</button>
+    </div>
+
+
+    <div class="flex flex-row justify-around text-center " [ngSwitch]="saison">
+      <ng-container *ngSwitchCase="'printemps'">
+
+          <button (click)="getAdventureByMonth(3)">Mars</button>
+          <button (click)="getAdventureByMonth(4)">Avril</button>
+          <button (click)="getAdventureByMonth(5)">Mai</button>
+        
+      </ng-container>
+    
+      <ng-container *ngSwitchCase="'été'">
+      
+          <button (click)="getAdventureByMonth(6)">Juin</button>
+          <button (click)="getAdventureByMonth(7)">Juillet</button>
+          <button (click)="getAdventureByMonth(8)">Août</button>
+        
+      </ng-container>
+    
+      <ng-container *ngSwitchCase="'automne'">
+      
+          <button (click)="getAdventureByMonth(9)">Septembre</button>
+          <button (click)="getAdventureByMonth(10)">Octobre</button>
+          <button (click)="getAdventureByMonth(11)">Novembre</button>
+        
+      </ng-container>
+    
+      <ng-container *ngSwitchCase="'hiver'">
+      
+          <button (click)="getAdventureByMonth(12)">Décembre</button>
+          <button (click)="getAdventureByMonth(1)">Janvier</button>
+          <button (click)="getAdventureByMonth(2)">Février</button>
+      </ng-container>
+    
+      <ng-container *ngSwitchDefadivt>
+        <h2>Saison non reconnue.</h2>
+      </ng-container>
+    </div>
+    
+    <div class="flex flex-row pl-5">
+      <h2>Nombre de personnes</h2>
+      <input type="number" min="0" (change)="setNbPersonne($event)" placeholder="0€">
+      <h2>Budget</h2>
+      <input type="number" min="0" (change)="getAdventureByMonthAndBudget($event)" placeholder="0€">
+    </div>
+
+    
+    <div class="rounded-3xl bg-blue-400" *ngFor="let activity of adventuresList">
+      <app-activity [activity]="activity" [city]="activity.city"></app-activity>
+    </div>
+
+</div>

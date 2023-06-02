@@ -1,0 +1,56 @@
+<div class="flex justify-center items-center abuttongn-middle text-left w-fdivl h-screen  bg-[url('/assets/BG_2_surmesure.svg')] bg-cover">
+  <div class="pt- w-3/4 h-3/4 bg-opacity-30 backdrop-filter backdrop-blur-lg p-8 rounded-3xl shadow-lg">
+
+    
+
+    <div class="flex flex-row justify-around text-center">
+      <button (click)="saison='printemps'">printemps</button>
+      <button (click)="saison='été'">été</button>
+      <button (click)="saison='automne'">automne</button>
+      <button (click)="saison='hiver'">hiver</button>
+    </div>
+
+
+    <div class="flex flex-row justify-around text-center " [ngSwitch]="saison">
+      <ng-container *ngSwitchCase="'printemps'">
+
+          <button>Mars</button>
+          <button>Avril</button>
+          <button>Mai</button>
+        
+      </ng-container>
+    
+      <ng-container *ngSwitchCase="'été'">
+      
+          <button class="">Juin</button>
+          <button>Juillet</button>
+          <button>Août</button>
+        
+      </ng-container>
+    
+      <ng-container *ngSwitchCase="'automne'">
+      
+          <button>Septembre</button>
+          <button>Octobre</button>
+          <button>Novembre</button>
+        
+      </ng-container>
+    
+      <ng-container *ngSwitchCase="'hiver'">
+      
+          <button>Décembre</button>
+          <button>Janvier</button>
+          <button>Février</button>
+        
+      </ng-container>
+    
+      <ng-container *ngSwitchDefadivt>
+        <h2>Saison non reconnue.</h2>
+      </ng-container>
+    </div>
+    <div class="flex flex-row justify-around h-52">
+      <app-calendar></app-calendar>
+      <app-weather></app-weather>
+    </div>
+
+</div>

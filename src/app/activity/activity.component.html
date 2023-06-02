@@ -1,0 +1,12 @@
+<div class="flex felx-row rounded-3xl bg-white m-5 p-5" *ngIf="activity.status=='En cours'">
+  <app-weather [city]="city"></app-weather>
+  <div class="pl-5">
+    <h4>{{ activity.subject }}</h4>
+    <p>Date : {{ activity.date }}</p>
+    <p>Lieu : {{ activity.location }}</p>
+    <p>Moniteur : {{ activity.monitor.name }}</p>
+    <p>Statut : {{ activity.status }}</p>
+    <p>Nombre maximum de participants : {{ activity.maxParticipants }}</p>
+  </div>
+
+</div>

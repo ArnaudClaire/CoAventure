@@ -1,0 +1,67 @@
+[
+  {
+    "date": "2023-06-15",
+    "maxParticipants": 10,
+    "status": "En cours",
+    "monitor": {
+      "name": "John Doe",
+      "email": "john.doe@example.com"
+    },
+    "subject": "Randonnée en montagne",
+    "location": "Montagnes de l'Est",
+    "costPerPerson": 25,
+    "city": "Montagnesville"
+  },
+  {
+    "date": "2023-06-20",
+    "maxParticipants": 5,
+    "status": "Planifiée",
+    "monitor": {
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com"
+    },
+    "subject": "Cours de natation",
+    "location": "Piscine municipale",
+    "costPerPerson": 15,
+    "city": "Piscineville"
+  },
+  {
+    "date": "2023-06-25",
+    "maxParticipants": 8,
+    "status": "Terminée",
+    "monitor": {
+      "name": "Bob Johnson",
+      "email": "bob.johnson@example.com"
+    },
+    "subject": "Séance de yoga",
+    "location": "Centre de bien-être",
+    "costPerPerson": 20,
+    "city": "Bien-êtreville"
+  },
+  {
+    "date": "2023-07-01",
+    "maxParticipants": 15,
+    "status": "En cours",
+    "monitor": {
+      "name": "Alice Brown",
+      "email": "alice.brown@example.com"
+    },
+    "subject": "Cours de cuisine",
+    "location": "Ecole de cuisine",
+    "costPerPerson": 30,
+    "city": "Cuisineville"
+  },
+  {
+    "date": "2023-07-05",
+    "maxParticipants": 12,
+    "status": "Planifiée",
+    "monitor": {
+      "name": "Michael Lee",
+      "email": "michael.lee@example.com"
+    },
+    "subject": "Séance de méditation",
+    "location": "Jardin zen",
+    "costPerPerson": 10,
+    "city": "Zenville"
+  }
+]

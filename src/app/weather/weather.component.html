@@ -1,0 +1,8 @@
+<div class="flex flex-col align-middle justify-center h-full">
+    <p class="text-3xl uppercase pb-5">{{ weatherData.name }}</p>
+    <p>{{ weatherData.weather[0].description }}</p>
+    <p>Température: {{ weatherData.main.temp-273 | round:2}}°C</p>
+    <p>Humidité: {{ weatherData.main.humidity}}</p>
+    
+</div>
+
